@@ -9,6 +9,7 @@
     height:1000px;
 }
 
+/* ---------Header----------- */
 /* RowLines: 3 & ColumnLines: 3; */
 .header {border: 1px solid red;
     grid-area: 1/2/2/3;
@@ -57,14 +58,27 @@ input[type='search']{
 
 .header>div {border: 1px solid blue;}
 
-
-/* --------------------------- */
+/* ---------Side----------- */
 
 .sidebar {
     grid-area: 1/1/3/2;
     background-color: #1992D4;
+    color: white;
+    display: grid;
+    grid-template: 60px repeat(6, 25px) repeat(4, 25px) / 1fr 5fr;
+    gap: 15px 15px;
+    font-weight: 700;
+    padding: 25px 60px 25px 25px;
 }
 
+.sidebar .dashboardTitle {
+    font-size: 2rem;
+}
+
+/* .sidebar>img {border: 1px solid red;}
+.sidebar>div {border: 1px solid red;} */
+
+/* ---------main----------- */
 .main {
     grid-area: 2/2/3/3;
     background-color: #E2E8F0;
