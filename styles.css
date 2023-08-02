@@ -1,0 +1,22 @@
+.container {border: 1px solid red;
+    display: grid;
+    grid-template: 1.5fr 6fr / 1fr 5fr;
+    height:1000px;
+}
+
+/* RowLines: 3 & ColumnLines: 3; */
+
+.header {
+    grid-area: 1/2/2/3;
+    background-color: darkblue;
+}
+
+.sidebar {
+    grid-area: 1/1/3/2;
+    background-color: lightblue;
+}
+
+.main {
+    grid-area: 2/2/3/3;
+    background-color: yellow;
+}
