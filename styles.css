@@ -255,5 +255,16 @@ input[type='search']{
 .trendingShell>div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    gap: 40px;
+}
+
+.trendingShell div img {
+    width: 60px;
+    height: 60px;
+}
+
+.bigUsername {
+    font-weight: 700;
+    font-size: 2rem;
 }
