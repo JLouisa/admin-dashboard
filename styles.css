@@ -11,16 +11,26 @@
 }
 
 /* ---------Header----------- */
-.header {
+.header { 
     grid-area: 1/2/2/3;
     background-color: white;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
 }
 
 .header {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     align-items: center;
+    gap: 20px 0px;
+}
+.searbar {
+    display: flex;
+}
+
+.loupe { 
+    margin-left: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .searchbtn {
@@ -29,7 +39,13 @@
     border: none;
 }
 
+form {
+    display: flex;
+    flex-grow: 1;
+}
+
 input[type='search']{
+    flex-grow: 1;
     background-color: #E2E8F0;
     border-radius: 20px;
     height: 40px;
@@ -38,15 +54,38 @@ input[type='search']{
     outline: none;
 }
 
+.notification img:first-child {
+    width: 30px;
+    height: 30px;
+}
+
 .notification {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 40px;
+}
+
+.littleUsername {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo2 {
+    width: 50px;
+    height: 50px;
 }
 
 .userOverview {
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    align-items: center;
+}
+
+.userOverview img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
 }
 
 .btns {
@@ -164,6 +203,20 @@ input[type='search']{
 .cardText {
     grid-column: 2 / 3;
     color: #636363;
+}
+
+.star, .share, .eyes {
+    width: 40px;
+    height: 40px;
+}
+
+.share {
+    margin-right: 40px;
+}
+
+.connect {
+    display: flex;
+    gap: 40px;
 }
 
 /* ----------------------------------------- */
